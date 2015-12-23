@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="d:/publishNunit" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/PLINTRON.NUNIT.WEBAPPLICATION.pdb" publishTime="11/27/2015 15:02:18" />
+    <file relUrl="bin/PLINTRON.NUNIT.WEBAPPLICATION.dll" publishTime="11/27/2015 15:02:18" />
+    <file relUrl="WebForm1.aspx" publishTime="11/27/2015 14:56:36" />
+    <file relUrl="Web.config" publishTime="11/27/2015 15:03:18" />
+  </publishProfile>
+</publishData>

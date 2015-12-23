@@ -1,0 +1,3 @@
+"D:\NuGet\packages\OpenCover.4.6.166\tools\OpenCover.Console.exe" -register:user -target:"C:\Program Files\NUnit.org\nunit-console\nunit3-console.exe" -targetargs:"D:\Projects\PLINTRON.NUNIT\PLINTRON.NUNIT.TESTCASE\bin\Debug\PLINTRON.NUNIT.TESTCASE.dll" -output:"D:\OpenCover\Results.xml" 
+"D:\NuGet\packages\ReportGenerator.2.3.2.0\tools\ReportGenerator.exe" "-reports:D:\OpenCover\Results.xml" "-targetdir:D:\OpenCover\"
+pause

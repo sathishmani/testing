@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="PLINTRON.NUNIT.WCF.Service1" CodeBehind="Service1.svc.cs" %>

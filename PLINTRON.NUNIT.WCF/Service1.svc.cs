@@ -1,0 +1,61 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.Serialization;
+using System.ServiceModel;
+using System.ServiceModel.Web;
+using System.Text;
+using NUnit.Framework;
+
+namespace PLINTRON.NUNIT.WCF
+{
+    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in code, svc and config file together.
+    public class Service1 : IService1
+    {
+        public string GetData(int value)
+        {
+            return string.Format("You entered: {0}", value);
+        }
+
+        public CompositeType GetDataUsingDataContract(CompositeType composite)
+        {
+            if (composite == null)
+            {
+                throw new ArgumentNullException("composite");
+            }
+            if (composite.BoolValue)
+            {
+                composite.StringValue += "Suffix";
+            }
+            return composite;
+        }
+
+
+
+        [Test]
+        public void TestMethodPostive()
+        {
+            int i = 3;
+            int j = 3;
+            Assert.AreEqual(i, j);
+        }
+
+        [Test]
+        public void TestMethodWebConfig()
+        {
+            int i = 3;
+
+            //ExeConfigurationFileMap fileMap = new ExeConfigurationFileMap();
+            //fileMap.ExeConfigFilename = @"D:\Projects\PLINTRON.NUNIT\PLINTRON.NUNIT.WEBSERVICE\web.config";
+            //Configuration config = ConfigurationManager.OpenMappedExeConfiguration(fileMap, ConfigurationUserLevel.None);
+
+
+            //int j = Convert.ToInt32(config.AppSettings.Settings["testWebConfig"].Value);
+
+            int j = Convert.ToInt32(System.Configuration.ConfigurationSettings.AppSettings["testWebConfig"]);
+            Assert.AreEqual(i, j);
+        }
+
+
+    }
+}
